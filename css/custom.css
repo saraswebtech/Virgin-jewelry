@@ -5486,7 +5486,7 @@ ul.view-order-product-info-list li span{
 }
 
 .privacy-policy-entry-item .section-title h2{
-	font-size: 36px;
+	font-size: 26px;
 }
 
 .privacy-policy-entry-item .section-title ul{
@@ -5748,6 +5748,31 @@ ul.view-order-product-info-list li span{
 	border: 1px solid var(--divider-color);
 	border-radius: 4px;
 	padding: 30px;
+}
+
+.gallery-item {
+   border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 10px;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to bottom, #ff8aab, #ffe6ed) border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery-caption {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 12px !important;
+    margin-bottom: 0;
 }
 
 .sidebar-cta-title{
