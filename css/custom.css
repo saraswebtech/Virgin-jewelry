@@ -1,4 +1,4 @@
-﻿/* ----------------------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------------------
 * Author        : Awaiken
 * Template Name : Cignet - Jewellery Store eCommerce HTML Template
 * File          : CSS File
@@ -8595,105 +8595,163 @@ ul.view-order-product-info-list li span {
 ================================ */
 
 .custom-process-section {
-	background: #fff;
-	padding: 45px 0 35px;
+	background: var(--bg-color);
+	padding: 100px 0 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+.custom-process-section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
 }
 
 .section-heading {
-	margin-bottom: 28px;
+	margin-bottom: 60px;
 }
 
 .section-heading h2 {
 	margin: 0;
-	font-size: 22px;
-	font-weight: 400;
-	color: #333;
+	font-size: 36px;
+	font-weight: 500;
+	color: var(--primary-color);
+	letter-spacing: 0.02em;
 }
 
 .section-heading h2 span {
-	color: #a90f3d;
+	color: var(--accent-color);
+	font-weight: 600;
 }
 
 .heading-line {
 	position: relative;
-	width: 105px;
-	height: 1px;
-	background: #a90f3d;
-	margin: 12px auto 0;
+	width: 80px;
+	height: 3px;
+	background: var(--accent-color);
+	margin: 18px auto 0;
+	border-radius: 2px;
 }
 
 .heading-line::after {
 	content: "";
 	position: absolute;
-	width: 5px;
-	height: 5px;
+	width: 8px;
+	height: 8px;
 	border-radius: 50%;
-	background: #a90f3d;
-	top: -2px;
+	background: var(--accent-color);
+	top: -3px;
 	left: 50%;
 	transform: translateX(-50%);
+	box-shadow: 0 0 0 4px rgba(156, 17, 55, 0.15);
 }
 
 .process-item {
 	position: relative;
 	text-align: center;
+	padding: 20px 10px;
+	transition: all 0.4s ease;
+}
+
+.process-item:hover {
+	transform: translateY(-8px);
 }
 
 .process-icon {
 	position: relative;
-	width: 78px;
-	height: 78px;
-	margin: 0 auto 12px;
-	border: 1px solid #ead9de;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 20px;
+	border: 2px solid var(--divider-color);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #fffafb;
+	background: var(--bg-color);
+	transition: all 0.4s ease;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.process-item:hover .process-icon {
+	border-color: var(--accent-color);
+	background: var(--accent-color);
+	box-shadow: 0 8px 30px rgba(156, 17, 55, 0.2);
 }
 
 .process-icon i {
-	color: #a90f3d;
-	font-size: 31px;
+	color: var(--accent-color);
+	font-size: 36px;
 	font-weight: 400;
+	transition: all 0.4s ease;
+}
+
+.process-item:hover .process-icon i {
+	color: var(--white-color);
 }
 
 .step-number {
 	position: absolute;
-	top: -6px;
-	left: -5px;
-	width: 19px;
-	height: 19px;
+	top: -8px;
+	left: -8px;
+	width: 26px;
+	height: 26px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background: #a90f3d;
-	color: #fff;
-	font-size: 10px;
-	font-weight: 600;
+	background: var(--accent-color);
+	color: var(--white-color);
+	font-size: 12px;
+	font-weight: 700;
+	font-family: var(--default-font);
+	border: 3px solid var(--bg-color);
+	z-index: 2;
+	transition: all 0.4s ease;
+}
+
+.process-item:hover .step-number {
+	background: var(--white-color);
+	color: var(--accent-color);
 }
 
 .process-item h3 {
 	margin: 0;
-	color: #333;
-	font-size: 10px;
+	color: var(--primary-color);
+	font-size: 13px;
 	font-weight: 600;
-	line-height: 1.3;
+	line-height: 1.4;
+	letter-spacing: 0.04em;
+	transition: color 0.3s ease;
+}
+
+.process-item:hover .process-item h3 {
+	color: var(--accent-color);
 }
 
 
-/* Desktop arrow effect */
+/* Desktop arrow connector */
 @media (min-width: 992px) {
 
 	.process-item::after {
-		content: "â€º";
+		content: "\f061";
+		font-family: "FontAwesome";
 		position: absolute;
-		top: 29px;
-		right: -10px;
-		color: #a90f3d;
-		font-size: 20px;
-		font-weight: 300;
+		top: 50px;
+		right: -8px;
+		color: var(--accent-color);
+		font-size: 14px;
+		font-weight: 900;
+		transform: translateY(-50%);
+		opacity: 0.5;
+		transition: all 0.4s ease;
+	}
+
+	.process-item:hover::after {
+		opacity: 1;
 	}
 
 	.col-lg-3:nth-child(4)::after,
@@ -8703,28 +8761,62 @@ ul.view-order-product-info-list li span {
 }
 
 
+/* Tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+
+	.process-icon {
+		width: 85px;
+		height: 85px;
+	}
+
+	.process-icon i {
+		font-size: 32px;
+	}
+
+	.process-item h3 {
+		font-size: 11px;
+	}
+}
+
 /* Mobile */
 @media (max-width: 767px) {
 
 	.custom-process-section {
-		padding: 35px 0 30px;
+		padding: 60px 0 50px;
+	}
+
+	.section-heading {
+		margin-bottom: 40px;
 	}
 
 	.section-heading h2 {
-		font-size: 18px;
+		font-size: 24px;
 	}
 
 	.process-icon {
-		width: 68px;
-		height: 68px;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto 16px;
 	}
 
 	.process-icon i {
-		font-size: 27px;
+		font-size: 30px;
+	}
+
+	.step-number {
+		width: 24px;
+		height: 24px;
+		font-size: 11px;
+		top: -7px;
+		left: -7px;
 	}
 
 	.process-item h3 {
-		font-size: 9px;
+		font-size: 11px;
+	}
+
+	.process-item::after {
+		display: none;
 	}
 }
 
@@ -8933,4 +9025,5 @@ ul.view-order-product-info-list li span {
         min-height: 320px;
     }
 }
+
 
