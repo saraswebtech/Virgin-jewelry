@@ -5803,14 +5803,14 @@ ul.view-order-product-info-list li span{
 
 .contact-form label{
 	font-family: var(--accent-font);
-	font-size: 20px;
+	font-size: 16px;
 	color: var(--text-color);
 	line-height: 1.2em;
 	margin-bottom: 10px;
 }
 
 .contact-form .form-control{
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.5em;
 	color: var(--primary-color);
@@ -7264,7 +7264,7 @@ ul.view-order-product-info-list li span{
 	}
 
 	.contact-form label{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.contact-info-box{
