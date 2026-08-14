@@ -5430,7 +5430,7 @@ ul.view-order-product-info-list li span{
 /****************************************/
 
 .page-privacy-policy{
-	padding: 120px 0;
+	padding: 60px 0;
 }
 
 .privacy-policy-sidebar-list ul li{
@@ -8374,7 +8374,7 @@ ul.view-order-product-info-list li span{
 	display: inline-block;
 	font-family: var(--default-font);
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 1em;
 	text-transform: uppercase;
 	background: var(--accent-color);

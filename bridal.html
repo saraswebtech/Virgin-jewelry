@@ -165,6 +165,27 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Page Contact Us Section Start -->
+    <div class="page-contact-us ptb-50 pb-0">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Get in touch</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque"> Inspired Fashion Designed For You</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">From the moment you say "yes" to the moments that
+                            follow, Virgin Jewels creates beautiful diamond jewellery for life's most unforgettable
+                            milestones.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Page Contact Us End -->
+
     <!-- Page Privacy Policy Start -->
     <div class="page-privacy-policy">
         <div class="container">
@@ -175,13 +196,13 @@
                         <!-- Page Category List Start -->
                         <div class="page-category-list privacy-policy-sidebar-list wow fadeInUp">
                             <ul>
-                                <li class="active"><a href="#category1">Engagement Rings</a></li>
-                                <li><a href="#category2">Solitaire Rings</a></li>
-                                <li><a href="#category3">Halo Rings</a></li>
-                                <li><a href="#category4">Three-Stone Rings</a></li>
-                                <li><a href="#category5">Wedding Bands</a></li>
-                                <li><a href="#category6">Bridal Sets</a></li>
-                                <li><a href="#category7">Anniversary Jewellery</a></li>
+                                <li class="active"><a class="text-uppercase" href="#category1">Engagement Rings</a></li>
+                                <li><a class="text-uppercase" href="#category2">Solitaire Rings</a></li>
+                                <li><a class="text-uppercase" href="#category3">Halo Rings</a></li>
+                                <li><a class="text-uppercase" href="#category4">Three-Stone Rings</a></li>
+                                <li><a class="text-uppercase" href="#category5">Wedding Bands</a></li>
+                                <li><a class="text-uppercase" href="#category6">Bridal Sets</a></li>
+                                <li><a class="text-uppercase" href="#category7">Anniversary Jewellery</a></li>
 
                             </ul>
                         </div>
@@ -191,8 +212,8 @@
                         <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
                             <h2 class="sidebar-cta-title">Need some help or want to chat</h2>
                             <ul>
-                                <li><a href="tel:9820010013"><img src="images/icon-phone-primary.svg"
-                                            alt="">+91 98200 10013</a></li>
+                                <li><a href="tel:9820010013"><img src="images/icon-phone-primary.svg" alt="">+91 98200
+                                        10013</a></li>
                                 <li><a href="mailto:info@virginjewls.com"><img src="images/icon-mail-primary.svg"
                                             alt="">info@virginjewls.com</a></li>
                             </ul>
@@ -684,13 +705,13 @@
     <script src="js/function.js"></script>
     <script src="js/theme-panel-dynamic.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const categoryLinks = document.querySelectorAll('.page-category-list ul li a');
             const categoryItems = document.querySelectorAll('.page-category-list ul li');
             const sections = document.querySelectorAll('.privacy-policy-entry-item[id^="category"]');
 
             function setActiveCategory(targetId) {
-                categoryItems.forEach(function(item) {
+                categoryItems.forEach(function (item) {
                     item.classList.remove('active');
                 });
                 const targetLink = document.querySelector('.page-category-list ul li a[href="#' + targetId + '"]');
@@ -699,8 +720,8 @@
                 }
             }
 
-            categoryLinks.forEach(function(link) {
-                link.addEventListener('click', function(e) {
+            categoryLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href').substring(1);
                     const targetSection = document.getElementById(targetId);
@@ -723,15 +744,15 @@
                 threshold: 0
             };
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         setActiveCategory(entry.target.id);
                     }
                 });
             }, observerOptions);
 
-            sections.forEach(function(section) {
+            sections.forEach(function (section) {
                 observer.observe(section);
             });
         });
