@@ -5717,6 +5717,18 @@ ul.view-order-product-info-list li span{
 	transform:translateY(-50%) rotate(45deg);
 }
 
+.page-category-list ul li.active a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.page-category-list ul li.active a::before{
+	transform:translateY(-50%) rotate(45deg);
+    background: url('../images/arrow-primary.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .sidebar-cta-box{
 	border: 1px solid var(--divider-color);
 	border-radius: 4px;
