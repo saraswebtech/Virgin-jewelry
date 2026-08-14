@@ -8306,3 +8306,13 @@ ul.view-order-product-info-list li span{
 .social-icons a:hover {
     color: #b5003b;
 }
+
+.ptb-90{
+	padding-top:90px;
+	padding-bottom:90px;
+}
+
+.ptb-50{
+	padding-top:50px;
+	padding-bottom:50px;
+}
