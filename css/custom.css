@@ -73,6 +73,10 @@
 /*** 	     02. General css		  ***/
 /****************************************/
 
+.bg-color{
+	background-color:#9c1137;
+}
+
 html,
 body{
 	width: 100%;
@@ -8262,11 +8266,11 @@ ul.view-order-product-info-list li span{
 .contact-icon {
     width: 48px;
     height: 48px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b5003b;
+    color: #fff;
     margin: 0 auto 18px;
 }
 
