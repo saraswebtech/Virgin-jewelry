@@ -109,11 +109,16 @@
                                     <li class="nav-item submenu"><a class="nav-link text-uppercase"
                                             href="jewellery.html">Jewellery</a>
                                         <ul>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Rings</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Earrings</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Necklaces</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Bracelets</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Pendants</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Rings</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Earrings</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Necklaces</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Bracelets</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Pendants</a>
+                                            </li>
                                         </ul>
 
                                     </li>
@@ -165,6 +170,75 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Contact Info Box Start -->
+    <div class="contact-info-box">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Contact information</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Reach Us Anytime Anywhere Easily</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Contact Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="images/icon-phone-white.svg" alt="">
+                        </div>
+                        <div class="contact-info-content">
+                            <p>Phone Number</p>
+                            <ul>
+                                <li><a href="tel:9820010013">+91 98200 10013</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact Info Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Contact Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="images/icon-mail-white.svg" alt="">
+                        </div>
+                        <div class="contact-info-content">
+                            <p>Email Address</p>
+                            <ul>
+                                <li><a href="mailto:info@virginjewls.com">info@virginjewls.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact Info Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Contact Info Item Start -->
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="images/icon-location-white.svg" alt="">
+                        </div>
+                        <div class="contact-info-content">
+                            <p>Our Location</p>
+                            <ul>
+                                <li> Indiranagar
+                                    Bangalore – 560038, India
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact Info Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Info Box End -->
+
     <!-- Page Contact Us Section Start -->
     <div class="page-contact-us">
         <div class="container">
@@ -187,8 +261,10 @@
                     <!-- Google Map Start -->
                     <div class="google-map-iframe wow fadeInUp">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps?q=Om+Chambers,+648%2FA,+4th+Floor,+Binnamangala+1st+Stage,+Indiranagar,+Bangalore+560038,+India&output=embed"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                     <!-- Google Map End -->
                 </div>
@@ -196,7 +272,7 @@
                 <div class="col-xl-6">
                     <!-- Contact Form Start -->
                     <div class="contact-form">
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                        <form id="contactForm" action="contact-form.php" method="POST" data-toggle="validator" class="wow fadeInUp"
                             data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="form-group col-md-6 mb-4">
@@ -228,6 +304,18 @@
                                 </div>
 
                                 <div class="form-group col-md-12 mb-4">
+                                    <label>How many letters does "VIRGIN" have?</label>
+                                    <select name="verify" class="form-control" id="verify" required>
+                                        <option value="" disabled selected>Select Option</option>
+                                        <option value="4">4</option>
+                                        <option value="6">6</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-12 mb-4">
                                     <label>Message*</label>
                                     <textarea name="message" class="form-control" id="message" rows="5"
                                         placeholder="Any Additional Message..."></textarea>
@@ -249,73 +337,6 @@
         </div>
     </div>
     <!-- Page Contact Us End -->
-
-    <!-- Contact Info Box Start -->
-    <div class="contact-info-box">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp">Contact information</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Reach Us Anytime Anywhere Easily</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item wow fadeInUp">
-                        <div class="icon-box">
-                            <img src="images/icon-phone-white.svg" alt="">
-                        </div>
-                        <div class="contact-info-content">
-                            <p>Phone Number</p>
-                            <ul>
-                                <li><a href="tel:770090123">+91 123 456 789</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Contact Info Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon-box">
-                            <img src="images/icon-mail-white.svg" alt="">
-                        </div>
-                        <div class="contact-info-content">
-                            <p>Email Address</p>
-                            <ul>
-                                <li><a href="mailto:support@yourbrand.com">info@dominname.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Contact Info Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon-box">
-                            <img src="images/icon-location-white.svg" alt="">
-                        </div>
-                        <div class="contact-info-content">
-                            <p>Our Location</p>
-                            <ul>
-                                <li>Fashion Avenue, Metro City</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Contact Info Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Info Box End -->
 
     <!-- Main Footer Start -->
     <footer class="main-footer">
