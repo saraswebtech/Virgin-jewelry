@@ -8316,3 +8316,58 @@ ul.view-order-product-info-list li span{
 	padding-top:50px;
 	padding-bottom:50px;
 }
+
+.custom-btn{
+	position: relative;
+	display: inline-block;
+	font-family: var(--default-font);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1em;
+	text-transform: uppercase;
+	background: var(--accent-color);
+	color: var(--white-color);
+	border: 1px solid var(--accent-color);
+	border-radius: 4px;
+	padding: 17px 30px;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+	z-index: 1;
+}
+
+.custom-btn:hover{
+	color: var(--primary-color);
+}
+
+.custom-btn::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	opacity: 0;
+	background-color: var(--white-color);
+	transition: all 0.4s ease-in-out;
+	z-index: -1;
+}
+
+.custom-btn:hover::after{
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+
+.custom-btn.custom-btn-active{
+	background: var(--accent-color);
+	color: var(--white-color);
+	border-color: var(--accent-color);
+}
+
+.custom-btn.custom-btn-active::after{
+	background-color: var(--white-color);
+}
+
+.custom-btn.custom-btn-active:hover{
+	color: var(--primary-color);
+}
