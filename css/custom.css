@@ -643,7 +643,7 @@ header.main-header .header-sticky.active{
 .main-menu ul .nav-item{
 	position: relative;
 	margin: 0 20px;
-	padding: 24px 0;
+	padding: 17px 0;
 }
 
 .main-menu ul .nav-item .nav-link{
@@ -3127,6 +3127,17 @@ header.main-header .header-sticky.active{
     position: sticky;
     top: 30px;
     margin-right: 20px;
+    z-index: 100;
+    background: #fff;
+}
+
+.page-privacy-policy .row {
+    align-items: stretch;
+}
+
+.page-privacy-policy .col-lg-4 {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-category-item{
@@ -5718,8 +5729,11 @@ ul.view-order-product-info-list li span{
 }
 
 .page-category-list ul li.active a{
-    color: var(--primary-color);
+    color: #ffffff;
     font-weight: 600;
+    background-color: #9c1137;
+    border-radius: 4px;
+    padding: 15px 15px;
 }
 
 .page-category-list ul li.active a::before{
@@ -5727,6 +5741,7 @@ ul.view-order-product-info-list li span{
     background: url('../images/arrow-primary.svg') no-repeat;
     background-position: center center;
     background-size: cover;
+    filter: brightness(0) invert(1);
 }
 
 .sidebar-cta-box{
