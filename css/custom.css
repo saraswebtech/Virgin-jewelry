@@ -9027,3 +9027,193 @@ ul.view-order-product-info-list li span {
 }
 
 
+/* =========================================
+   DIAMOND GUIDE SECTION
+========================================= */
+
+.diamond-guide-section {
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+    background: #fffafa;
+}
+
+/* Heading */
+
+.diamond-heading span {
+    display: block;
+    margin-bottom: 12px;
+    color: #a91e43;
+}
+
+.diamond-heading h1 {
+    margin: 0;
+    color: #171717;
+}
+
+.heading-line {
+    position: relative;
+    width: 65px;
+    height: 20px;
+    margin-top: 12px;
+}
+
+/* Content Row */
+
+.diamond-info-row {
+    margin-top: 25px;
+}
+
+
+/* Individual Item */
+
+.diamond-info {
+    position: relative;
+    min-height: 180px;
+    padding: 0 18px;
+    text-align: center;
+}
+
+.diamond-info:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 1px;
+    height: 125px;
+    background: #ead9de;
+}
+
+
+/* Icon */
+
+.diamond-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 15px;
+    border: 1px solid #e8cbd3;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.diamond-icon svg {
+    width: 38px;
+    height: 38px;
+    fill: none;
+    stroke: #c45a76;
+    stroke-width: 2;
+}
+
+
+/* Title */
+
+.diamond-info h3 {
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+
+/* Description */
+
+.diamond-info p {
+    margin: 0 auto;
+    color: #555;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .diamond-guide-section {
+        padding: 50px 0;
+    }
+
+    .diamond-heading {
+        text-align: center;
+    }
+
+    .heading-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .diamond-info {
+        min-height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .diamond-info:not(:last-child)::after {
+        display: none;
+    }
+
+    .diamond-visual {
+        min-height: 300px;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .diamond-guide-section {
+        padding: 40px 15px;
+    }
+
+    .diamond-heading span {
+        font-size: 11px;
+    }
+
+    .diamond-heading h1 {
+        font-size: 28px;
+    }
+
+    .diamond-info-row {
+        margin-top: 30px;
+    }
+
+    .diamond-info {
+        min-height: 185px;
+        padding: 0 8px;
+    }
+
+    .diamond-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 12px;
+    }
+
+    .diamond-icon svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .diamond-info h3 {
+        font-size: 13px;
+    }
+
+    .diamond-info p {
+        max-width: 135px;
+        font-size: 10px;
+    }
+
+    .diamond-visual {
+        min-height: auto;
+        margin-top: 15px;
+    }
+
+    .large-diamond {
+        max-width: 100%;
+    }
+
+}
