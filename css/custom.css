@@ -8593,7 +8593,7 @@ ul.view-order-product-info-list li span {
 
 .custom-process-section {
 	background: var(--bg-color);
-	padding: 100px 0 80px;
+	padding: 90px 0 ;
 	position: relative;
 	overflow: hidden;
 }
@@ -8752,7 +8752,7 @@ ul.view-order-product-info-list li span {
 @media (max-width: 767px) {
 
 	.custom-process-section {
-		padding: 60px 0 50px;
+		padding: 60px 0;
 	}
 
 	.section-heading {
@@ -9690,6 +9690,8 @@ ul.view-order-product-info-list li span {
 
 .process-section {
 	background: #fff;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 .process-wrapper {
@@ -10384,4 +10386,10 @@ ul.view-order-product-info-list li span {
         font-size: 12px;
     }
 
+}
+
+.bg-color-2{
+	background: linear-gradient(180deg, #fff 0%, #fdf5f7 100%);
+	border-top: 1px solid #e8c4cf;
+	border-bottom: 1px solid #e8c4cf;
 }
