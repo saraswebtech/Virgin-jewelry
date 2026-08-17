@@ -1181,7 +1181,9 @@ header.main-header .header-sticky.active {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 185px 0;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
 	overflow: hidden;
 }
 
@@ -6327,7 +6329,7 @@ ul.view-order-product-info-list li span {
 	}
 
 	.hero-slide {
-		padding: 120px 0;
+		min-height: 90vh;
 	}
 
 	.hero-content {
@@ -7552,7 +7554,7 @@ ul.view-order-product-info-list li span {
 	}
 
 	.hero-slide {
-		padding: 60px 0;
+		min-height: 90vh;
 	}
 
 	.hero-content-list ul {
