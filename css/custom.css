@@ -8721,7 +8721,7 @@ ul.view-order-product-info-list li span {
 .process-item h3 {
 	margin: 0;
 	color: var(--primary-color);
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.4;
 	letter-spacing: 0.04em;
@@ -8732,33 +8732,6 @@ ul.view-order-product-info-list li span {
 	color: var(--accent-color);
 }
 
-
-/* Desktop arrow connector */
-@media (min-width: 992px) {
-
-	.process-item::after {
-		content: "\f061";
-		font-family: "FontAwesome";
-		position: absolute;
-		top: 50px;
-		right: -8px;
-		color: var(--accent-color);
-		font-size: 14px;
-		font-weight: 900;
-		transform: translateY(-50%);
-		opacity: 0.5;
-		transition: all 0.4s ease;
-	}
-
-	.process-item:hover::after {
-		opacity: 1;
-	}
-
-	.col-lg-3:nth-child(4)::after,
-	.col-lg-3:nth-child(8)::after {
-		display: none;
-	}
-}
 
 
 /* Tablet */
@@ -8825,205 +8798,205 @@ ul.view-order-product-info-list li span {
 =============================== */
 
 .gemstone-section {
-    background: #fdf2f3;
-    overflow: hidden;
-    padding: 100px 0;
+	background: #fdf2f3;
+	overflow: hidden;
+	padding: 100px 0;
 }
 
 .gemstone-content {
-    padding: 0 40px 0 0;
-    max-width: 600px;
+	padding: 0 40px 0 0;
+	max-width: 600px;
 }
 
 .gemstone-line {
-    position: relative;
-    width: 80px;
-    height: 2px;
-    margin-bottom: 22px;
-    background: #a90f3d;
+	position: relative;
+	width: 80px;
+	height: 2px;
+	margin-bottom: 22px;
+	background: #a90f3d;
 }
 
 .gemstone-line::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #a90f3d;
-    right: -4px;
-    top: -3px;
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #a90f3d;
+	right: -4px;
+	top: -3px;
 }
 
 .gemstone-content h2 {
-    margin: 0 0 18px;
-    color: #191919;
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 1.2;
+	margin: 0 0 18px;
+	color: #191919;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 .gemstone-desc {
-    max-width: 100%;
-    margin-bottom: 10px;
-    color: #5e4149;
-    font-size: 15px;
-    line-height: 1.7;
+	max-width: 100%;
+	margin-bottom: 10px;
+	color: #5e4149;
+	font-size: 15px;
+	line-height: 1.7;
 }
 
 .gemstone-note {
-    max-width: 100%;
-    margin-bottom: 22px;
-    color: #5e4149;
-    font-size: 15px;
-    line-height: 1.7;
+	max-width: 100%;
+	margin-bottom: 22px;
+	color: #5e4149;
+	font-size: 15px;
+	line-height: 1.7;
 }
 
 .gemstone-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 20px;
-    max-width: 100%;
-    margin-bottom: 28px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px 20px;
+	max-width: 100%;
+	margin-bottom: 28px;
 }
 
 .gemstone-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #191919;
-    padding: 8px 14px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 6px;
-    transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #191919;
+	padding: 8px 14px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 6px;
+	transition: all 0.3s ease;
 }
 
 .gemstone-item:hover {
-    background: rgba(255, 255, 255, 1);
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	background: rgba(255, 255, 255, 1);
+	transform: translateX(4px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .stone-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	flex-shrink: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .amethyst {
-    background: #7131a5;
+	background: #7131a5;
 }
 
 .citrine {
-    background: #e2a91d;
+	background: #e2a91d;
 }
 
 .garnet {
-    background: #7d1720;
+	background: #7d1720;
 }
 
 .topaz {
-    background: #24a8d2;
+	background: #24a8d2;
 }
 
 .tourmaline {
-    background: #b52c70;
+	background: #b52c70;
 }
 
 .aquamarine {
-    background: #67c9dc;
+	background: #67c9dc;
 }
 
 .peridot {
-    background: #6da832;
+	background: #6da832;
 }
 
 .other {
-    background: #b44c8d;
+	background: #b44c8d;
 }
 
 .gemstone-btn {
-    margin-top: 8px;
+	margin-top: 8px;
 }
 
 .gemstone-image {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-    height: 100%;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+	height: 100%;
 }
 
 .gemstone-image img {
-    width: 100%;
-    height: 100%;
-    min-height: 520px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease;
+	width: 100%;
+	height: 100%;
+	min-height: 520px;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.6s ease;
 }
 
 .gemstone-image:hover img {
-    transform: scale(1.03);
+	transform: scale(1.03);
 }
 
 
 /* Tablet */
 @media (max-width: 991px) {
-    .gemstone-section {
-        padding: 80px 0;
-    }
+	.gemstone-section {
+		padding: 80px 0;
+	}
 
-    .gemstone-content {
-        padding: 0 20px 0 0;
-        max-width: 100%;
-    }
+	.gemstone-content {
+		padding: 0 20px 0 0;
+		max-width: 100%;
+	}
 
-    .gemstone-content h2 {
-        font-size: 32px;
-    }
+	.gemstone-content h2 {
+		font-size: 32px;
+	}
 
-    .gemstone-image img {
-        min-height: 420px;
-    }
+	.gemstone-image img {
+		min-height: 420px;
+	}
 }
 
 
 /* Mobile */
 @media (max-width: 767px) {
-    .gemstone-section {
-        padding: 60px 0;
-    }
+	.gemstone-section {
+		padding: 60px 0;
+	}
 
-    .gemstone-content {
-        padding: 0 0 30px;
-    }
+	.gemstone-content {
+		padding: 0 0 30px;
+	}
 
-    .gemstone-content h2 {
-        font-size: 26px;
-    }
+	.gemstone-content h2 {
+		font-size: 26px;
+	}
 
-    .gemstone-desc,
-    .gemstone-note {
-        font-size: 14px;
-    }
+	.gemstone-desc,
+	.gemstone-note {
+		font-size: 14px;
+	}
 
-    .gemstone-grid {
-        gap: 8px 12px;
-    }
+	.gemstone-grid {
+		gap: 8px 12px;
+	}
 
-    .gemstone-item {
-        font-size: 13px;
-        padding: 6px 10px;
-    }
+	.gemstone-item {
+		font-size: 13px;
+		padding: 6px 10px;
+	}
 
-    .gemstone-image img {
-        min-height: 320px;
-    }
+	.gemstone-image img {
+		min-height: 320px;
+	}
 }
 
 
@@ -9032,95 +9005,95 @@ ul.view-order-product-info-list li span {
 ========================================= */
 
 .diamond-guide-section {
-    position: relative;
-    overflow: hidden;
-    padding: 60px 0;
-    background: #fffafa;
+	position: relative;
+	overflow: hidden;
+	padding: 60px 0;
+	background: #fffafa;
 }
 
 /* Heading */
 
 .diamond-heading span {
-    display: block;
-    margin-bottom: 12px;
-    color: #a91e43;
+	display: block;
+	margin-bottom: 12px;
+	color: #a91e43;
 }
 
 .diamond-heading h1 {
-    margin: 0;
-    color: #171717;
+	margin: 0;
+	color: #171717;
 }
 
 .heading-line {
-    position: relative;
-    width: 65px;
-    height: 20px;
-    margin-top: 12px;
+	position: relative;
+	width: 65px;
+	height: 20px;
+	margin-top: 12px;
 }
 
 /* Content Row */
 
 .diamond-info-row {
-    margin-top: 25px;
+	margin-top: 25px;
 }
 
 
 /* Individual Item */
 
 .diamond-info {
-    position: relative;
-    min-height: 180px;
-    padding: 0 18px;
-    text-align: center;
+	position: relative;
+	min-height: 180px;
+	padding: 0 18px;
+	text-align: center;
 }
 
 .diamond-info:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    right: 0;
-    width: 1px;
-    height: 125px;
-    background: #ead9de;
+	content: "";
+	position: absolute;
+	top: 22px;
+	right: 0;
+	width: 1px;
+	height: 125px;
+	background: #ead9de;
 }
 
 
 /* Icon */
 
 .diamond-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 68px;
-    height: 68px;
-    margin: 0 auto 15px;
-    border: 1px solid #e8cbd3;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 68px;
+	height: 68px;
+	margin: 0 auto 15px;
+	border: 1px solid #e8cbd3;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 .diamond-icon svg {
-    width: 38px;
-    height: 38px;
-    fill: none;
-    stroke: #c45a76;
-    stroke-width: 2;
+	width: 38px;
+	height: 38px;
+	fill: none;
+	stroke: #c45a76;
+	stroke-width: 2;
 }
 
 
 /* Title */
 
 .diamond-info h3 {
-    margin-bottom: 10px;
-    color: #252525;
+	margin-bottom: 10px;
+	color: #252525;
 }
 
 
 /* Description */
 
 .diamond-info p {
-    margin: 0 auto;
-    color: #555;
+	margin: 0 auto;
+	color: #555;
 }
 
 
@@ -9130,32 +9103,32 @@ ul.view-order-product-info-list li span {
 
 @media (max-width: 991.98px) {
 
-    .diamond-guide-section {
-        padding: 50px 0;
-    }
+	.diamond-guide-section {
+		padding: 50px 0;
+	}
 
-    .diamond-heading {
-        text-align: center;
-    }
+	.diamond-heading {
+		text-align: center;
+	}
 
-    .heading-line {
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.heading-line {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    .diamond-info {
-        min-height: 200px;
-        margin-bottom: 20px;
-    }
+	.diamond-info {
+		min-height: 200px;
+		margin-bottom: 20px;
+	}
 
-    .diamond-info:not(:last-child)::after {
-        display: none;
-    }
+	.diamond-info:not(:last-child)::after {
+		display: none;
+	}
 
-    .diamond-visual {
-        min-height: 300px;
-        margin-top: 20px;
-    }
+	.diamond-visual {
+		min-height: 300px;
+		margin-top: 20px;
+	}
 
 }
 
@@ -9166,54 +9139,679 @@ ul.view-order-product-info-list li span {
 
 @media (max-width: 575.98px) {
 
-    .diamond-guide-section {
-        padding: 40px 15px;
-    }
+	.diamond-guide-section {
+		padding: 40px 15px;
+	}
 
-    .diamond-heading span {
-        font-size: 11px;
-    }
+	.diamond-heading span {
+		font-size: 11px;
+	}
 
-    .diamond-heading h1 {
-        font-size: 28px;
-    }
+	.diamond-heading h1 {
+		font-size: 28px;
+	}
 
-    .diamond-info-row {
-        margin-top: 30px;
-    }
+	.diamond-info-row {
+		margin-top: 30px;
+	}
 
-    .diamond-info {
-        min-height: 185px;
-        padding: 0 8px;
-    }
+	.diamond-info {
+		min-height: 185px;
+		padding: 0 8px;
+	}
 
-    .diamond-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 12px;
-    }
+	.diamond-icon {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 12px;
+	}
 
-    .diamond-icon svg {
-        width: 34px;
-        height: 34px;
-    }
+	.diamond-icon svg {
+		width: 34px;
+		height: 34px;
+	}
 
-    .diamond-info h3 {
-        font-size: 13px;
-    }
+	.diamond-info h3 {
+		font-size: 13px;
+	}
 
-    .diamond-info p {
-        max-width: 135px;
-        font-size: 10px;
-    }
+	.diamond-info p {
+		max-width: 135px;
+		font-size: 10px;
+	}
 
-    .diamond-visual {
-        min-height: auto;
-        margin-top: 15px;
-    }
+	.diamond-visual {
+		min-height: auto;
+		margin-top: 15px;
+	}
 
-    .large-diamond {
-        max-width: 100%;
-    }
+	.large-diamond {
+		max-width: 100%;
+	}
+
+}
+
+/* ==========================================
+   DIAMOND SHAPES
+========================================== */
+
+.diamond-shapes-section {
+	padding: 80px 0;
+	background: var(--bg-color);
+	overflow: hidden;
+}
+
+/* Heading */
+
+.diamond-shapes-heading {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.diamond-shapes-heading h2 {
+	margin: 0;
+	color: var(--primary-color);
+	font-family: var(--accent-font);
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
+.shape-heading-line {
+	position: relative;
+	width: 110px;
+	height: 16px;
+	margin: 18px auto 0;
+}
+
+.shape-heading-line::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 110px;
+	height: 3px;
+	background: var(--accent-color);
+	border-radius: 2px;
+}
+
+.shape-heading-line span {
+	position: absolute;
+	top: 3px;
+	left: 52px;
+	width: 11px;
+	height: 11px;
+	border: 2px solid var(--accent-color);
+	border-radius: 50%;
+	background: var(--bg-color);
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.diamond-shapes-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 0;
+	max-width: 1100px;
+	margin: 0 auto;
+	border-top: 1px solid var(--divider-color);
+	border-left: 1px solid var(--divider-color);
+}
+
+
+/* ==========================================
+   ITEM
+========================================== */
+
+.diamond-shape-item {
+	position: relative;
+	padding: 30px 15px;
+	text-align: center;
+	border-right: 1px solid var(--divider-color);
+	border-bottom: 1px solid var(--divider-color);
+	transition: all 0.4s ease;
+	cursor: pointer;
+	background: var(--bg-color);
+}
+
+.diamond-shape-item:hover {
+	background: var(--secondary-color);
+	transform: translateY(-4px);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+	z-index: 2;
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.diamond-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	margin-bottom: 15px;
+}
+
+.diamond-image img {
+	display: block;
+	width: auto;
+	max-width: 80px;
+	height: 80px;
+	object-fit: contain;
+	transition: transform 0.4s ease;
+	filter: grayscale(20%);
+	opacity: 0.9;
+}
+
+.diamond-shape-item:hover .diamond-image img {
+	transform: scale(1.08);
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.diamond-shape-item h3 {
+	margin: 0;
+	color: var(--primary-color);
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.4;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	transition: color 0.3s ease;
+}
+
+.diamond-shape-item:hover h3 {
+	color: var(--accent-color);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991.98px) {
+
+	.diamond-shapes-section {
+		padding: 60px 0;
+	}
+
+	.diamond-shapes-heading {
+		margin-bottom: 40px;
+	}
+
+	.diamond-shapes-heading h2 {
+		font-size: 28px;
+	}
+
+	.diamond-shapes-grid {
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 700px;
+	}
+
+	.diamond-shape-item {
+		padding: 25px 10px;
+	}
+
+	.diamond-image {
+		height: 75px;
+		margin-bottom: 12px;
+	}
+
+	.diamond-image img {
+		max-width: 65px;
+		height: 65px;
+	}
+
+	.diamond-shape-item h3 {
+		font-size: 11px;
+	}
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 575.98px) {
+
+	.diamond-shapes-section {
+		padding: 50px 0;
+	}
+
+	.diamond-shapes-heading {
+		margin-bottom: 30px;
+	}
+
+	.diamond-shapes-heading h2 {
+		font-size: 24px;
+	}
+
+	.diamond-shapes-grid {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.diamond-shape-item {
+		padding: 20px 8px;
+	}
+
+	.diamond-image {
+		height: 65px;
+		margin-bottom: 10px;
+	}
+
+	.diamond-image img {
+		max-width: 55px;
+		height: 55px;
+	}
+
+	.diamond-shape-item h3 {
+		font-size: 10px;
+	}
+}
+
+/* ==========================================
+   NATURAL VS LAB-GROWN
+========================================== */
+
+.natural-lab-section {
+	position: relative;
+	overflow: hidden;
+	padding: 60px 0;
+	background: #fffafa;
+}
+
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.natural-lab-content {
+	padding-right: 35px;
+}
+
+
+/* Heading */
+
+.section-heading h2 {
+	margin: 0;
+	color: #252525;
+}
+
+.heading-line {
+	position: relative;
+	width: 65px;
+	height: 15px;
+	margin-top: 6px;
+}
+
+.heading-line::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 65px;
+	height: 1px;
+	background: #bd4263;
+}
+
+
+
+/* ==========================================
+   COMPARISON
+========================================== */
+
+.comparison-row {
+	margin-top: 20px;
+}
+
+.comparison-item {
+	position: relative;
+	min-height: 205px;
+	padding: 0 20px;
+	text-align: center;
+}
+
+
+
+
+/* Icon */
+
+.comparison-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	margin: 0 auto 12px;
+	border: 1px solid #d9aebb;
+	border-radius: 50%;
+	color: #b73b5e;
+	font-size: 25px;
+}
+
+.comparison-icon span {
+	line-height: 1;
+}
+
+
+/* Title */
+
+.comparison-item h3 {
+	margin: 0 0 12px;
+	color: #a5264c;
+}
+
+
+/* Paragraph */
+
+.comparison-item p {
+	max-width: 190px;
+	margin: 0 auto 12px;
+	color: #555;
+}
+
+
+/* ==========================================
+   BOTTOM TEXT
+========================================== */
+
+.comparison-bottom {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.comparison-bottom p {
+	margin: 0;
+	color: #555;
+}
+
+.comparison-bottom strong {
+	color: #a5264c;
+}
+
+
+/* ==========================================
+   RIGHT IMAGE
+========================================== */
+
+.natural-lab-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	overflow: hidden;
+}
+
+.natural-lab-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	object-fit: cover;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991.98px) {
+
+	.natural-lab-section {
+		padding: 50px 0;
+	}
+
+	.natural-lab-content {
+		padding-right: 0;
+		margin-bottom: 35px;
+	}
+
+	.section-heading {
+		text-align: center;
+	}
+
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767.98px) {
+
+	.natural-lab-section {
+		padding: 40px 15px;
+	}
+
+	.section-heading h2 {
+		font-size: 25px;
+	}
+
+	.comparison-row {
+		margin-top: 25px;
+	}
+
+	.comparison-item {
+		min-height: auto;
+		margin-bottom: 25px;
+		padding: 0 10px;
+	}
+
+	.comparison-item:first-child {
+		border-right: 0;
+		border-bottom: 1px solid #e5cfd5;
+		padding-bottom: 25px;
+	}
+
+	.comparison-item p {
+		max-width: 280px;
+	}
+
+	.comparison-bottom {
+		margin-top: 5px;
+	}
+
+}
+
+/* ==========================================
+   FROM DIAMOND TO JEWELLERY
+========================================== */
+
+.craftsmanship-section {
+	padding: 55px 0;
+	background: #fffafa;
+	overflow: hidden;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.craftsmanship-heading {
+	margin-bottom: 28px;
+}
+
+.craftsmanship-heading>span {
+	display: block;
+	margin-bottom: 8px;
+	color: #a8244b;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .4px;
+}
+
+.craftsmanship-heading h2 {
+	margin: 0;
+	color: #252525;
+}
+
+.craftsmanship-heading p {
+	margin: 7px 0 0;
+	color: #555;
+}
+
+/* ==========================================
+   PROCESS
+========================================== */
+
+.craft-process {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.process-row {
+	position: relative;
+	margin: 0;
+}
+
+
+/* ==========================================
+   PROCESS ITEM
+========================================== */
+
+.process-item {
+	position: relative;
+	text-align: center;
+}
+
+.process-image {
+	width: 100%;
+	max-width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.process-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.process-item h3 {
+	margin: 7px 0 0;
+	color: #252525;
+	font-family: var(--default-font);
+}
+
+
+/* ==========================================
+   HORIZONTAL ARROWS
+========================================== */
+
+.process-arrow {
+	position: absolute;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 35px;
+	color: #ae1f4b;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.top-row .process-arrow:nth-of-type(1) {
+	left: 23.5%;
+}
+
+.top-row .process-arrow:nth-of-type(2) {
+	left: 48.5%;
+}
+
+.top-row .process-arrow:nth-of-type(3) {
+	left: 73.5%;
+}
+
+.bottom-row .process-arrow:nth-of-type(1) {
+	left: 23.5%;
+}
+
+.bottom-row .process-arrow:nth-of-type(2) {
+	left: 48.5%;
+}
+
+.bottom-row .process-arrow:nth-of-type(3) {
+	left: 73.5%;
+}
+
+
+/* ==========================================
+   BOTTOM ROW
+========================================== */
+
+.bottom-row {
+	margin-top: -2px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991.98px) {
+
+	.craftsmanship-section {
+		padding: 45px 0;
+	}
+
+	.craft-process {
+		max-width: 750px;
+	}
+
+	.process-row>div {
+		margin-bottom: 30px;
+	}
+
+	.process-image {
+		max-width: 170px;
+		height: 90px;
+	}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 575.98px) {
+
+	.craftsmanship-section {
+		padding: 40px 15px;
+	}
+
+	.craftsmanship-heading {
+		margin-bottom: 30px;
+	}
+
+	.process-row>div {
+		margin-bottom: 28px;
+	}
+
+	.process-image {
+		max-width: 190px;
+		height: 105px;
+	}
 
 }
