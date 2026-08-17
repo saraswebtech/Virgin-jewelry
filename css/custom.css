@@ -8593,7 +8593,7 @@ ul.view-order-product-info-list li span {
 
 .custom-process-section {
 	background: var(--bg-color);
-	padding: 90px 0 ;
+	padding: 90px 0;
 	position: relative;
 	overflow: hidden;
 }
@@ -9901,7 +9901,7 @@ ul.view-order-product-info-list li span {
 
 .why-lab-section {
 	background: linear-gradient(180deg, #fff 0%, #fdf5f7 40%, #fff 100%);
-	padding: 90px 0 ;
+	padding: 90px 0;
 	border-top: 1px solid #e8c4cf;
 	border-bottom: 1px solid #e8c4cf;
 	position: relative;
@@ -10177,8 +10177,15 @@ ul.view-order-product-info-list li span {
 }
 
 @keyframes floatDiamond {
-	0%, 100% { transform: translateY(0); }
-	50% { transform: translateY(-15px); }
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-15px);
+	}
 }
 
 .natural-diamond-intro h2,
@@ -10189,9 +10196,17 @@ ul.view-order-product-info-list li span {
 	animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.natural-diamond-intro h2 { animation-delay: 0.1s; }
-.natural-diamond-intro p { animation-delay: 0.25s; }
-.natural-diamond-intro .custom-btn { animation-delay: 0.4s; }
+.natural-diamond-intro h2 {
+	animation-delay: 0.1s;
+}
+
+.natural-diamond-intro p {
+	animation-delay: 0.25s;
+}
+
+.natural-diamond-intro .custom-btn {
+	animation-delay: 0.4s;
+}
 
 @keyframes fadeInUp {
 	to {
@@ -10463,41 +10478,40 @@ ul.view-order-product-info-list li span {
 
 .comparison-title,
 .science-title {
-    color: #a80d3a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.3;
-    margin: 0;
+	color: #a80d3a;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0;
 }
 
 .comparison-divider {
-    position: relative;
-    width: 100px;
-    height: 12px;
-    margin: 8px auto 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	width: 100px;
+	height: 12px;
+	margin: 8px auto 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .comparison-divider hr {
-    width: 100%;
-    margin: 0;
-    border: 0;
-    border-top: 1px solid #e2b5c2;
-    opacity: 1;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #e2b5c2;
+	opacity: 1;
 }
 
 .comparison-divider span {
-    position: absolute;
-    background: #fff;
-    color: #a80d3a;
-    padding: 0 8px;
+	position: absolute;
+	background: #fff;
+	color: #a80d3a;
+	padding: 0 8px;
 }
 
 .comparison-divider i {
-    font-size: 9px;
+	font-size: 9px;
 }
 
 
@@ -10506,54 +10520,54 @@ ul.view-order-product-info-list li span {
 ========================================= */
 
 .diamond-comparison-section {
-    background: #fff;
-    padding: 55px 0;
+	background: #fff;
+	padding: 55px 0;
 }
 
 .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    font-size: 13px;
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 13px;
 }
 
 .comparison-table th {
-    background: #a80d3a;
-    color: #fff;
-    padding: 14px 12px;
-    border: 1px solid #fff;
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
+	background: #a80d3a;
+	color: #fff;
+	padding: 14px 12px;
+	border: 1px solid #fff;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
 }
 
 .comparison-table th:first-child {
-    width: 23%;
+	width: 23%;
 }
 
 .comparison-table th:nth-child(2),
 .comparison-table th:nth-child(3) {
-    width: 38.5%;
+	width: 38.5%;
 }
 
 .comparison-table td {
-    border: 1px solid #e6c4ce;
-    padding: 14px 15px;
-    color: #222;
-    line-height: 1.4;
-    vertical-align: middle;
+	border: 1px solid #e6c4ce;
+	padding: 14px 15px;
+	color: #222;
+	line-height: 1.4;
+	vertical-align: middle;
 }
 
 .comparison-table td:first-child {
-    font-weight: 600;
-    color: #333;
+	font-weight: 600;
+	color: #333;
 }
 
 .comparison-table td:first-child i {
-    color: #a80d3a;
-    width: 22px;
-    margin-right: 5px;
-    text-align: center;
+	color: #a80d3a;
+	width: 22px;
+	margin-right: 5px;
+	text-align: center;
 }
 
 
@@ -10562,53 +10576,53 @@ ul.view-order-product-info-list li span {
 ========================================= */
 
 .science-brilliance-section {
-    position: relative;
-    background: linear-gradient(135deg, #fff 0%, #fff8fa 50%, #fff 100%);
-    padding: 90px 0;
-    border-top: 1px solid #e6c4ce;
-    border-bottom: 1px solid #e6c4ce;
-    overflow: hidden;
+	position: relative;
+	background: linear-gradient(135deg, #fff 0%, #fff8fa 50%, #fff 100%);
+	padding: 90px 0;
+	border-top: 1px solid #e6c4ce;
+	border-bottom: 1px solid #e6c4ce;
+	overflow: hidden;
 }
 
 .science-brilliance-section::before {
-    content: '';
-    position: absolute;
-    top: -120px;
-    right: -80px;
-    width: 340px;
-    height: 340px;
-    background: radial-gradient(circle, rgba(168, 13, 58, 0.04) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
+	content: '';
+	position: absolute;
+	top: -120px;
+	right: -80px;
+	width: 340px;
+	height: 340px;
+	background: radial-gradient(circle, rgba(168, 13, 58, 0.04) 0%, transparent 70%);
+	border-radius: 50%;
+	pointer-events: none;
 }
 
 .science-brilliance-section::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    left: -60px;
-    width: 280px;
-    height: 280px;
-    background: radial-gradient(circle, rgba(168, 13, 58, 0.035) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
+	content: '';
+	position: absolute;
+	bottom: -100px;
+	left: -60px;
+	width: 280px;
+	height: 280px;
+	background: radial-gradient(circle, rgba(168, 13, 58, 0.035) 0%, transparent 70%);
+	border-radius: 50%;
+	pointer-events: none;
 }
 
 .science-title {
-    color: #222;
-    font-family: var(--accent-font);
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
+	color: #222;
+	font-family: var(--accent-font);
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	margin-bottom: 8px;
 }
 
 .science-description {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.7;
-    margin: 0 auto 50px;
-    max-width: 680px;
+	color: #555;
+	font-size: 15px;
+	line-height: 1.7;
+	margin: 0 auto 50px;
+	max-width: 680px;
 }
 
 
@@ -10617,114 +10631,114 @@ ul.view-order-product-info-list li span {
 ========================================= */
 
 .science-features {
-    max-width: 1000px;
-    margin: 0 auto;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .science-feature-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 28px 24px;
-    background: #fff;
-    border: 1px solid #f0dce2;
-    border-radius: 12px;
-    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 20px rgba(168, 13, 58, 0.04);
-    position: relative;
-    overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 28px 24px;
+	background: #fff;
+	border: 1px solid #f0dce2;
+	border-radius: 12px;
+	transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 4px 20px rgba(168, 13, 58, 0.04);
+	position: relative;
+	overflow: hidden;
 }
 
 .science-feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #a80d3a, #d4a0b5);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: linear-gradient(90deg, #a80d3a, #d4a0b5);
+	opacity: 0;
+	transition: opacity 0.4s ease;
 }
 
 .science-feature-card:hover::before {
-    opacity: 1;
+	opacity: 1;
 }
 
 .science-feature-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(168, 13, 58, 0.12);
-    border-color: #e8c4cf;
+	transform: translateY(-6px);
+	box-shadow: 0 18px 40px rgba(168, 13, 58, 0.12);
+	border-color: #e8c4cf;
 }
 
 .science-icon {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #a80d3a 0%, #c71551 100%);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(168, 13, 58, 0.25);
-    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+	width: 60px;
+	height: 60px;
+	min-width: 60px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #a80d3a 0%, #c71551 100%);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 20px rgba(168, 13, 58, 0.25);
+	transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
 }
 
 .science-icon::after {
-    content: '';
-    position: absolute;
-    inset: -4px;
-    border-radius: 50%;
-    border: 1px solid rgba(168, 13, 58, 0.2);
-    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+	content: '';
+	position: absolute;
+	inset: -4px;
+	border-radius: 50%;
+	border: 1px solid rgba(168, 13, 58, 0.2);
+	transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .science-feature-card:hover .science-icon {
-    transform: translateY(-4px) scale(1.06);
-    box-shadow: 0 12px 28px rgba(168, 13, 58, 0.35);
+	transform: translateY(-4px) scale(1.06);
+	box-shadow: 0 12px 28px rgba(168, 13, 58, 0.35);
 }
 
 .science-feature-card:hover .science-icon::after {
-    inset: -7px;
-    border-color: rgba(168, 13, 58, 0.4);
+	inset: -7px;
+	border-color: rgba(168, 13, 58, 0.4);
 }
 
 .science-icon i {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .science-feature-content {
-    flex: 1;
-    text-align: left;
+	flex: 1;
+	text-align: left;
 }
 
 .science-feature-content h3 {
-    color: #222;
-    font-family: var(--accent-font);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.3;
-    margin: 0 0 8px;
-    letter-spacing: 0.03em;
+	color: #222;
+	font-family: var(--accent-font);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0 0 8px;
+	letter-spacing: 0.03em;
 }
 
 .science-feature-content h3 span {
-    display: block;
-    font-family: var(--default-font);
-    font-size: 13px;
-    font-weight: 500;
-    color: #a80d3a;
-    letter-spacing: 0.08em;
-    margin-top: 2px;
+	display: block;
+	font-family: var(--default-font);
+	font-size: 13px;
+	font-weight: 500;
+	color: #a80d3a;
+	letter-spacing: 0.08em;
+	margin-top: 2px;
 }
 
 .science-feature-content p {
-    color: #666;
-    font-size: 13.5px;
-    line-height: 1.6;
-    margin: 0;
+	color: #666;
+	font-size: 13.5px;
+	line-height: 1.6;
+	margin: 0;
 }
 
 
@@ -10734,40 +10748,40 @@ ul.view-order-product-info-list li span {
 
 @media (max-width: 991.98px) {
 
-    .science-brilliance-section {
-        padding: 70px 0;
-    }
+	.science-brilliance-section {
+		padding: 70px 0;
+	}
 
-    .science-title {
-        font-size: 30px;
-    }
+	.science-title {
+		font-size: 30px;
+	}
 
-    .science-feature-card {
-        padding: 22px 18px;
-        gap: 16px;
-    }
+	.science-feature-card {
+		padding: 22px 18px;
+		gap: 16px;
+	}
 
-    .science-icon {
-        width: 52px;
-        height: 52px;
-        min-width: 52px;
-    }
+	.science-icon {
+		width: 52px;
+		height: 52px;
+		min-width: 52px;
+	}
 
-    .science-icon i {
-        font-size: 20px;
-    }
+	.science-icon i {
+		font-size: 20px;
+	}
 
-    .science-feature-content h3 {
-        font-size: 16px;
-    }
+	.science-feature-content h3 {
+		font-size: 16px;
+	}
 
-    .science-feature-content h3 span {
-        font-size: 12px;
-    }
+	.science-feature-content h3 span {
+		font-size: 12px;
+	}
 
-    .science-feature-content p {
-        font-size: 12.5px;
-    }
+	.science-feature-content p {
+		font-size: 12.5px;
+	}
 }
 
 
@@ -10777,48 +10791,48 @@ ul.view-order-product-info-list li span {
 
 @media (max-width: 767.98px) {
 
-    .science-brilliance-section {
-        padding: 55px 15px;
-    }
+	.science-brilliance-section {
+		padding: 55px 15px;
+	}
 
-    .science-title {
-        font-size: 24px;
-    }
+	.science-title {
+		font-size: 24px;
+	}
 
-    .science-description {
-        font-size: 13.5px;
-        margin-bottom: 35px;
-    }
+	.science-description {
+		font-size: 13.5px;
+		margin-bottom: 35px;
+	}
 
-    .science-feature-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 25px 20px;
-        margin-bottom: 15px;
-    }
+	.science-feature-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 25px 20px;
+		margin-bottom: 15px;
+	}
 
-    .science-feature-content {
-        text-align: center;
-    }
+	.science-feature-content {
+		text-align: center;
+	}
 
-    .science-icon {
-        width: 56px;
-        height: 56px;
-        min-width: 56px;
-    }
+	.science-icon {
+		width: 56px;
+		height: 56px;
+		min-width: 56px;
+	}
 
-    .science-icon i {
-        font-size: 22px;
-    }
+	.science-icon i {
+		font-size: 22px;
+	}
 
-    .science-feature-content h3 {
-        font-size: 15px;
-    }
+	.science-feature-content h3 {
+		font-size: 15px;
+	}
 
-    .science-feature-content p {
-        font-size: 12.5px;
-    }
+	.science-feature-content p {
+		font-size: 12.5px;
+	}
 }
 
 
@@ -10828,43 +10842,258 @@ ul.view-order-product-info-list li span {
 
 @media (max-width: 480px) {
 
-    .science-brilliance-section {
-        padding: 45px 12px;
-    }
+	.science-brilliance-section {
+		padding: 45px 12px;
+	}
 
-    .science-title {
-        font-size: 20px;
-    }
+	.science-title {
+		font-size: 20px;
+	}
 
-    .science-feature-card {
-        padding: 22px 16px;
-    }
+	.science-feature-card {
+		padding: 22px 16px;
+	}
 
-    .science-icon {
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-    }
+	.science-icon {
+		width: 48px;
+		height: 48px;
+		min-width: 48px;
+	}
 
-    .science-icon i {
-        font-size: 18px;
-    }
+	.science-icon i {
+		font-size: 18px;
+	}
 
-    .science-feature-content h3 {
-        font-size: 14px;
-    }
+	.science-feature-content h3 {
+		font-size: 14px;
+	}
 
-    .science-feature-content h3 span {
-        font-size: 11px;
-    }
+	.science-feature-content h3 span {
+		font-size: 11px;
+	}
 
-    .science-feature-content p {
-        font-size: 11.5px;
-    }
+	.science-feature-content p {
+		font-size: 11.5px;
+	}
 }
 
-.bg-color-2{
+.bg-color-2 {
 	background: linear-gradient(180deg, #fff 0%, #fdf5f7 100%);
 	border-top: 1px solid #e8c4cf;
 	border-bottom: 1px solid #e8c4cf;
+}
+
+/* about us  */
+
+/* About Intro */
+.about-intro {
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.about-intro::before {
+	content: "";
+	position: absolute;
+	top: -80px;
+	right: -80px;
+	width: 280px;
+	height: 280px;
+	background: radial-gradient(circle, rgba(156, 17, 55, 0.04) 0%, transparent 70%);
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+.about-intro p {
+	color: #555;
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+.about-intro p strong {
+	color: #a70d3c;
+	font-weight: 600;
+}
+
+/* Section Badge */
+.section-badge {
+	display: inline-block;
+	margin-bottom: 12px;
+}
+
+.section-badge .section-sub-title {
+	display: inline-block;
+	font-family: var(--default-font);
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	line-height: 1.286em;
+	color: var(--accent-color);
+	border: 1px solid var(--divider-color);
+	border-radius: 100px;
+	padding: 6px 16px 6px 32px;
+	position: relative;
+}
+
+.section-badge .section-sub-title::before {
+	content: '';
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: var(--accent-color);
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+}
+
+/* Section Title */
+.section-title-content .section-title {
+	font-family: var(--accent-font);
+	font-size: 46px;
+	font-weight: 600;
+	line-height: 1.2em;
+	color: var(--primary-color);
+	margin-bottom: 0;
+}
+
+/* About Intro Summary */
+.about-intro-summary {
+	font-size: 15px;
+	color: #777;
+	line-height: 1.8;
+	margin-bottom: 28px !important;
+}
+
+/* Icons */
+.about-icon {
+	width: 42px;
+	height: 42px;
+	border: 1px solid #f2d7df;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #a70d3c;
+	font-size: 20px;
+	background: #fffafb;
+	transition: all 0.4s ease-in-out;
+}
+
+.about-icon i {
+	transition: all 0.4s ease-in-out;
+}
+
+.about-intro .d-flex:hover .about-icon {
+	background: var(--accent-color);
+	border-color: var(--accent-color);
+	box-shadow: 0 4px 15px rgba(156, 17, 55, 0.25);
+}
+
+.about-intro .d-flex:hover .about-icon i {
+	color: var(--white-color);
+}
+
+/* Image */
+.about-image-wrapper {
+	position: relative;
+	padding: 12px;
+	background: #fff8fa;
+	border-radius: 10px;
+}
+
+.about-image-wrapper::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 38px;
+	height: 38px;
+	border-top: 2px solid #d9a441;
+	border-left: 2px solid #d9a441;
+}
+
+.about-image-wrapper::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 38px;
+	height: 38px;
+	border-right: 2px solid #d9a441;
+	border-bottom: 2px solid #d9a441;
+}
+
+.about-image-wrapper img {
+	display: block;
+	width: 100%;
+	height: 360px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+	.about-intro p {
+		font-size: 14px;
+	}
+
+	.about-image-wrapper img {
+		height: 320px;
+	}
+
+	.section-title-content .section-title {
+		font-size: 36px;
+	}
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+	.about-intro {
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+	}
+
+	.about-intro p {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	.about-intro-summary {
+		font-size: 14px !important;
+	}
+
+	.about-icon {
+		width: 38px;
+		height: 38px;
+		font-size: 17px;
+	}
+
+	.about-image-wrapper {
+		margin-top: 15px;
+	}
+
+	.about-image-wrapper img {
+		height: 280px;
+	}
+
+	.section-title-content .section-title {
+		font-size: 30px;
+	}
+}
+
+/* Small Mobile */
+@media (max-width: 575.98px) {
+	.about-image-wrapper img {
+		height: 240px;
+	}
+
+	.about-intro p {
+		font-size: 13px;
+	}
+
+	.section-title-content .section-title {
+		font-size: 26px;
+	}
 }
