@@ -378,6 +378,26 @@
 			fixedContentPos: true
 		});
 	}
+
+	/* Hero Slider JS */
+	if ($('.hero-swiper').length) {
+		var heroSwiper = new Swiper('.hero-swiper', {
+			loop: true,
+			effect: 'fade',
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}
 	
 	/* product quantity Input Js */
 	document.querySelectorAll(".qty-box").forEach(box => {

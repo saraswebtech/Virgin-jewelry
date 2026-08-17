@@ -1169,12 +1169,49 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../assets/hero-bg.png');
+	overflow: hidden;
+}
+
+.hero-slider {
+	background-image: none !important;
+}
+
+.hero-slide {
+	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 185px 0;
 	overflow: hidden;
+}
+
+.hero-swiper {
+	width: 100%;
+}
+
+.hero-swiper .swiper-pagination {
+	bottom: 30px;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+	background: var(--white-color);
+	opacity: 0.5;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+	color: var(--white-color);
+	opacity: 0.8;
+	transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-button-prev:hover,
+.hero-swiper .swiper-button-next:hover {
+	opacity: 1;
 }
 
 .hero-overlay {
@@ -1183,7 +1220,6 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(135deg, rgba(47, 61, 56, 0.85) 0%, rgba(47, 61, 56, 0.6) 50%, rgba(47, 61, 56, 0.75) 100%);
 	z-index: 1;
 }
 
@@ -6290,7 +6326,7 @@ ul.view-order-product-info-list li span {
 		margin-bottom: 10px;
 	}
 
-	.hero {
+	.hero-slide {
 		padding: 120px 0;
 	}
 
@@ -7515,7 +7551,7 @@ ul.view-order-product-info-list li span {
 		font-size: 26px;
 	}
 
-	.hero {
+	.hero-slide {
 		padding: 60px 0;
 	}
 
@@ -8731,7 +8767,7 @@ ul.view-order-product-info-list li span {
 }
 
 .section-heading {
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .section-heading h2 {
@@ -9649,8 +9685,8 @@ ul.view-order-product-info-list li span {
 ========================================== */
 
 .comparison-bottom {
-	margin-top: 10px;
-	text-align: center;
+	margin-top: 20px;
+	text-align: left;
 }
 
 .comparison-bottom p {
