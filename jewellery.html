@@ -625,6 +625,59 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
     <script src="js/theme-panel-dynamic.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryLinks = document.querySelectorAll('.page-category-list ul li a');
+            const categoryItems = document.querySelectorAll('.page-category-list ul li');
+            const sections = document.querySelectorAll('.privacy-policy-entry-item[id^="category"]');
+
+            function setActiveCategory(targetId) {
+                categoryItems.forEach(function (item) {
+                    item.classList.remove('active');
+                });
+                const targetLink = document.querySelector('.page-category-list ul li a[href="#' + targetId + '"]');
+                if (targetLink) {
+                    targetLink.parentElement.classList.add('active');
+                }
+            }
+
+            categoryLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const headerOffset = 80;
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        setActiveCategory(entry.target.id);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 
 
