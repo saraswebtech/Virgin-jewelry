@@ -9833,7 +9833,7 @@ ul.view-order-product-info-list li span {
 
 .lab-hero {
 	background: #fff;
-	
+
 }
 
 /* LEFT CONTENT */
@@ -9884,211 +9884,504 @@ ul.view-order-product-info-list li span {
 
 }
 
+
+.lab-subtitle {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 16px;
+	line-height: 1.3;
+	font-style: italic;
+	font-weight: 300;
+	color: #a80d3a;
+	margin-bottom: 14px;
+}
+
 /* why choose lab */
 
+.why-lab-section {
+	background: linear-gradient(180deg, #fff 0%, #fdf5f7 100%);
+	padding: 90px 0 80px;
+	border-top: 1px solid #e8c4cf;
+	border-bottom: 1px solid #e8c4cf;
+	position: relative;
+	overflow: hidden;
+}
 
- .why-lab-section {
-        background: #fff;
-        padding: 18px 0 25px;
-        border-top: 1px solid #e8c4cf;
-        border-bottom: 1px solid #e8c4cf;
+
+/* HEADING */
+
+.why-lab-title {
+	margin: 0;
+	color: var(--primary-color);
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+}
+
+
+
+/* ITEM CARD */
+
+.why-lab-item {
+	padding: 45px 30px 40px;
+	text-align: center;
+	position: relative;
+	background: #fff;
+	border: 1px solid #f0dce2;
+	border-radius: 8px;
+	margin-top: 30px;
+	transition: all 0.4s ease;
+	box-shadow: 0 4px 20px rgba(156, 17, 55, 0.04);
+}
+
+.why-lab-item:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 30px rgba(156, 17, 55, 0.10);
+	border-color: #e8c4cf;
+}
+
+/* Vertical separator - hidden, using card borders instead */
+.why-lab-item::after {
+	display: none;
+}
+
+.col-lg-3:last-child .why-lab-item::after {
+	display: none;
+}
+
+/* ICON */
+
+.why-lab-icon {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 22px;
+	border-radius: 50%;
+	background: var(--accent-color);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 20px rgba(156, 17, 55, 0.25);
+	position: relative;
+}
+
+.why-lab-icon::after {
+	content: '';
+	position: absolute;
+	inset: -4px;
+	border-radius: 50%;
+	border: 1px solid #f0dce2;
+}
+
+.why-lab-icon i {
+	font-size: 34px;
+	line-height: 1;
+}
+
+/* TITLE */
+
+.why-lab-item h3 {
+	margin: 0 0 12px;
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: 0.04em;
+}
+
+/* DESCRIPTION */
+
+.why-lab-item p {
+	max-width: 260px;
+	margin: 0 auto;
+	color: var(--text-color);
+}
+
+/* ==========================
+   MOBILE
+   ========================== */
+
+@media (max-width: 767.98px) {
+	.why-lab-section {
+		padding: 55px 0 45px;
+	}
+
+	.why-lab-title {
+		font-size: 26px;
+	}
+
+	.why-lab-item {
+		padding: 30px 20px 30px;
+		margin-top: 20px;
+	}
+
+	.why-lab-icon {
+		width: 68px;
+		height: 68px;
+		margin-bottom: 18px;
+	}
+
+	.why-lab-icon i {
+		font-size: 28px;
+	}
+
+	.why-lab-item h3 {
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+
+	.why-lab-item p {
+		max-width: 100%;
+		font-size: 14px;
+	}
+}
+
+/* ==========================
+   SMALL MOBILE
+   ========================== */
+
+@media (max-width: 480px) {
+	.why-lab-section {
+		padding: 45px 0 35px;
+	}
+
+	.why-lab-title {
+		font-size: 22px;
+	}
+
+	.why-lab-item {
+		padding: 25px 16px 28px;
+	}
+
+	.why-lab-icon {
+		width: 64px;
+		height: 64px;
+	}
+
+	.why-lab-icon i {
+		font-size: 26px;
+	}
+
+	.why-lab-item h3 {
+		font-size: 15px;
+	}
+
+	.why-lab-item p {
+		font-size: 13px;
+	}
+}
+
+.section-divider {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 10px auto 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-divider hr {
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #e8b8c6;
+	opacity: 1;
+}
+
+.section-divider span {
+	position: absolute;
+	padding: 0 10px;
+	color: #a80d3a;
+	line-height: 1;
+}
+
+.section-divider i {
+	font-size: 10px;
+}
+
+
+/* =========================================
+   COMMON
+========================================= */
+
+.comparison-title,
+.science-title {
+    color: #a80d3a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.comparison-divider {
+    position: relative;
+    width: 100px;
+    height: 12px;
+    margin: 8px auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comparison-divider hr {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e2b5c2;
+    opacity: 1;
+}
+
+.comparison-divider span {
+    position: absolute;
+    background: #fff;
+    color: #a80d3a;
+    padding: 0 8px;
+}
+
+.comparison-divider i {
+    font-size: 9px;
+}
+
+
+/* =========================================
+   SECTION 1
+========================================= */
+
+.diamond-comparison-section {
+    background: #fff;
+    padding: 55px 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px;
+}
+
+.comparison-table th {
+    background: #a80d3a;
+    color: #fff;
+    padding: 14px 12px;
+    border: 1px solid #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.comparison-table th:first-child {
+    width: 23%;
+}
+
+.comparison-table th:nth-child(2),
+.comparison-table th:nth-child(3) {
+    width: 38.5%;
+}
+
+.comparison-table td {
+    border: 1px solid #e6c4ce;
+    padding: 14px 15px;
+    color: #222;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.comparison-table td:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.comparison-table td:first-child i {
+    color: #a80d3a;
+    width: 22px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+
+/* =========================================
+   SECTION 2
+========================================= */
+
+.science-brilliance-section {
+    background: #fff8fa;
+    padding: 60px 0;
+    border-top: 1px solid #e6c4ce;
+    border-bottom: 1px solid #e6c4ce;
+}
+
+.science-title {
+    color: #222;
+}
+
+.science-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.science-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.science-description {
+    color: #222;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 auto 35px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.science-features {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.science-feature {
+    text-align: center;
+    padding: 15px 20px;
+    border-right: 1px solid #e6c4ce;
+}
+
+.col-md-3:last-child .science-feature {
+    border-right: 0;
+}
+
+.science-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #f9edf1;
+    color: #a80d3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.science-icon i {
+    font-size: 22px;
+}
+
+.science-feature h3 {
+    color: #222;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 0;
+}
+
+.science-feature h3 span {
+    display: block;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .diamond-comparison-section {
+        padding: 45px 0;
     }
 
-
-    /* HEADING */
-
-    .why-lab-title {
-        margin: 0;
-        color: #111;
+    .science-brilliance-section {
+        padding: 50px 0;
     }
 
-
-    /* DECORATIVE DIVIDER */
-
-    .why-lab-divider {
-        width: 96px;
-        height: 1px;
-        background: #e8c4cf;
-        margin: 7px auto 0;
-        position: relative;
+    .science-image {
+        height: 220px;
     }
 
-    .why-lab-divider span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background: #fff;
-        color:  #a80d3a;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .diamond-comparison-section {
+        padding: 40px 15px;
+    }
+
+    .science-brilliance-section {
+        padding: 45px 15px;
+    }
+
+    .comparison-title,
+    .science-title {
+        font-size: 17px;
+    }
+
+    .comparison-table {
+        min-width: 650px;
+        font-size: 12px;
+    }
+
+    .comparison-table th {
+        font-size: 12px;
+        padding: 11px 8px;
+    }
+
+    .comparison-table td {
+        padding: 11px 8px;
+    }
+
+    .science-image {
+        height: 180px;
+        border-radius: 6px;
+    }
+
+    .science-description {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .science-feature {
+        min-height: 100px;
+        padding: 15px 8px;
+        border-right: 0;
+        border-bottom: 1px solid #e6c4ce;
+    }
+
+    .science-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .science-feature h3 {
         font-size: 10px;
-        line-height: 1;
-        padding: 0 9px;
     }
 
+}
 
-    /* ITEM */
 
-    .why-lab-item {
-        padding: 5px 35px 10px;
-        text-align: center;
-        position: relative;
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .science-image {
+        height: 150px;
     }
 
-
-    /* Vertical separator */
-
-    .why-lab-item::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 5px;
-        height: 112px;
-        width: 1px;
-        background: #e8c4cf;
+    .science-description {
+        font-size: 12px;
     }
 
-    .col-lg-3:last-child .why-lab-item::after {
-        display: none;
-    }
-
-
-    /* ICON */
-
-    .why-lab-icon {
-        width: 56px;
-        height: 56px;
-        margin: 0 auto 9px;
-        border-radius: 50%;
-        background:  #f9edf1;
-        color:  #a80d3a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .why-lab-icon i {
-        font-size: 29px;
-        line-height: 1;
-    }
-
-
-    /* TITLE */
-
-    .why-lab-item h3 {
-        margin: 0 0 8px;
-        color: #111;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1.3;
-    }
-
-
-    /* DESCRIPTION */
-
-    .why-lab-item p {
-        max-width: 210px;
-        margin: 0 auto;
-        color: #222;
-    }
-
-
-    /* ==========================
-       TABLET
-    ========================== */
-
-    @media (max-width: 991.98px) {
-
-        .why-lab-section {
-            padding: 25px 0;
-        }
-
-        .why-lab-item {
-            padding: 15px 25px 20px;
-            margin-bottom: 15px;
-        }
-
-        /* 2 x 2 layout */
-
-        .col-md-6:nth-child(2) .why-lab-item::after {
-            display: none;
-        }
-
-        .col-md-6:nth-child(3) .why-lab-item::after {
-            display: block;
-        }
-
-    }
-
-
-    /* ==========================
-       MOBILE
-    ========================== */
-
-    @media (max-width: 767.98px) {
-
-        .why-lab-section {
-            padding: 30px 15px;
-        }
-
-        .why-lab-title {
-            font-size: 22px;
-        }
-
-        .why-lab-divider {
-            margin-top: 8px;
-        }
-
-        .why-lab-item {
-            min-height: auto;
-            padding: 18px 20px 24px;
-            margin-bottom: 0;
-        }
-
-        /* Remove vertical separators */
-
-        .why-lab-item::after {
-            display: none !important;
-        }
-
-        /* Add horizontal separator */
-
-        .col-md-6:not(:last-child) .why-lab-item::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 15%;
-            width: 70%;
-            height: 1px;
-            background: #e8c4cf;
-        }
-
-        .why-lab-icon {
-            width: 58px;
-            height: 58px;
-        }
-
-        .why-lab-item h3 {
-            font-size: 13px;
-        }
-
-        .why-lab-item p {
-            max-width: 280px;
-            font-size: 13px;
-        }
-
-    }
-
-
-    /* ==========================
-       SMALL MOBILE
-    ========================== */
-
-    @media (max-width: 480px) {
-
-
-        .why-lab-item {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-    }
+}
