@@ -1169,7 +1169,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../images/hero-bg-image.jpg');
+	background-image: url('../assets/hero-bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -2041,7 +2041,7 @@ header.main-header .header-sticky.active {
 /****************************************/
 
 .our-faqs {
-	padding: 120px 0 60px;
+	padding: 90px 0;
 }
 
 .faqs-content-box {
@@ -2103,12 +2103,11 @@ header.main-header .header-sticky.active {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	margin-top: 120px;
 }
 
 .limited-offer-item {
 	position: relative;
-	width: calc(50% - 15px);
+	width: calc(33.333% - 20px);
 	min-height: 520px;
 	border-radius: 4px;
 	overflow: hidden;
@@ -11863,4 +11862,497 @@ ul.view-order-product-info-list li span {
 		font-size: 11px;
 		padding: 10px 22px;
 	}
+}
+/* home */
+
+
+/* ==============================
+   CUSTOM + GEMSTONE PROMO
+================================ */
+
+.custom-gemstone-section {
+    background: #fff;
+}
+
+.promo-card {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid #f1e4e7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+    box-shadow: 0 10px 30px rgba(150, 15, 55, 0.08);
+    transform: translateY(-3px);
+}
+
+
+/* Image */
+
+.promo-image {
+    flex: 0 0 42%;
+    overflow: hidden;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 205px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.promo-card:hover .promo-image img {
+    transform: scale(1.04);
+}
+
+
+/* Content */
+
+.promo-content {
+    flex: 1;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-content h3 {
+    color: #9c1137;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 2px;
+}
+
+.promo-content h4 {
+    color: #9c1137;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.promo-content p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    max-width: 360px;
+}
+
+
+/* Button */
+
+.promo-btn {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #9c1137;
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+
+    padding: 11px 17px;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+    background: #7f0d2d;
+    color: #fff;
+}
+
+.promo-btn span {
+    font-size: 18px;
+    line-height: 10px;
+}
+
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 991.98px) {
+
+    .promo-content {
+        padding: 25px;
+    }
+
+    .promo-content h3 {
+        font-size: 19px;
+    }
+
+    .promo-content h4 {
+        font-size: 15px;
+    }
+
+    .promo-content p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 575.98px) {
+
+    .custom-gemstone-section {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+    }
+
+    .promo-card {
+        flex-direction: column;
+    }
+
+    .promo-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .promo-image img {
+        height: 220px;
+        min-height: 0;
+    }
+
+    .promo-content {
+        padding: 22px 20px 25px;
+    }
+
+    .promo-content h3 {
+        font-size: 19px;
+    }
+
+    .promo-content h4 {
+        font-size: 15px;
+    }
+
+    .promo-content p {
+        font-size: 13px;
+        max-width: none;
+        margin-bottom: 18px;
+    }
+
+    .promo-btn {
+        font-size: 10px;
+        padding: 10px 14px;
+    }
+
+}
+
+/* =========================================
+   VIRGIN JEWELS - ABOUT SECTION
+========================================= */
+
+.vj-about-section {
+    background: #fff;
+}
+
+.vj-about-image {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.vj-about-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* About Content */
+
+.vj-about-content {
+    padding-left: 15px;
+}
+
+.vj-section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.vj-section-label span {
+    color: #9c1137;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.vj-section-label i {
+    display: block;
+    width: 45px;
+    height: 1px;
+    background: #9c1137;
+}
+
+.vj-about-content h2,
+.vj-collections-heading h2 {
+    color: #8f1236;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.vj-about-content p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 13px;
+    max-width: 590px;
+}
+
+.vj-about-content strong {
+    font-weight: 600;
+    color: #333;
+}
+
+
+/* Button */
+
+.vj-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 5px;
+
+    padding: 11px 17px;
+
+    background: #a70d3c;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+.vj-primary-btn:hover {
+    background: #850b31;
+    color: #fff;
+}
+
+.vj-primary-btn span {
+    font-size: 18px;
+    line-height: 10px;
+}
+
+
+/* =========================================
+   COLLECTION SECTION
+========================================= */
+
+.vj-collections-section {
+    background: #fff;
+}
+
+.vj-collections-heading {
+    margin-bottom: 25px !important;
+}
+
+.vj-collections-heading .vj-section-label {
+    justify-content: center;
+}
+
+.vj-collections-heading h2 {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   COLLECTION CARD
+========================================= */
+
+.vj-collection-card {
+    background: #fff;
+    border: 1px solid #eee4e6;
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.vj-collection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(156, 17, 55, 0.08);
+}
+
+
+/* Card Image */
+
+.vj-card-image {
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+    background: #faf5f2;
+}
+
+.vj-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.vj-collection-card:hover .vj-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* Card Content */
+
+.vj-card-content {
+    text-align: center;
+    padding: 13px 8px 12px;
+}
+
+.vj-card-content h3 {
+    color: #8f1236;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin: 0 0 8px;
+}
+
+.vj-card-content p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.55;
+
+    min-height: 32px;
+    margin: 0;
+}
+
+.vj-card-content p span {
+    color: #aaa;
+    margin: 0 3px;
+}
+
+.vj-card-content a {
+    display: inline-block;
+
+    margin-top: 7px;
+
+    color: #9c1137;
+    text-decoration: none;
+
+    font-size: 20px;
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+.vj-card-content a:hover {
+    transform: translateX(4px);
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .vj-about-section,
+    .vj-collections-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .vj-about-image img {
+        height: 250px;
+    }
+
+    .vj-about-content {
+        padding-top: 5px;
+    }
+
+    .vj-section-label span {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .vj-section-label i {
+        width: 30px;
+    }
+
+    .vj-about-content h2,
+    .vj-collections-heading h2 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .vj-about-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .vj-primary-btn {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+
+    /* Collection Cards */
+
+    .vj-card-image {
+        height: 220px;
+    }
+
+    .vj-card-content {
+        padding: 16px 12px;
+    }
+
+    .vj-card-content h3 {
+        font-size: 15px;
+    }
+
+    .vj-card-content p {
+        font-size: 11px;
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 375px) {
+
+    .vj-card-image {
+        height: 190px;
+    }
+
+    .vj-about-image img {
+        height: 220px;
+    }
+
 }
