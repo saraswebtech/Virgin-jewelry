@@ -8490,7 +8490,6 @@ ul.view-order-product-info-list li span {
 	display: inline-flex;
 	align-items: center;
 	gap: 22px;
-	margin-top: 18px;
 	padding: 13px 20px;
 	background: #a90f3d;
 	color: #fff;
@@ -8568,9 +8567,7 @@ ul.view-order-product-info-list li span {
 		object-fit: cover;
 	}
 
-	.custom-btn {
-		margin-top: 15px;
-	}
+
 }
 
 
@@ -9831,3 +9828,267 @@ ul.view-order-product-info-list li span {
 		display: flex;
 	}
 }
+
+/* lab hero  */
+
+.lab-hero {
+	background: #fff;
+	
+}
+
+/* LEFT CONTENT */
+.lab-hero-content {
+	padding: 90px 0px;
+	display: flex;
+	align-items: center;
+	max-width: 550px;
+}
+
+.lab-hero h1 {
+	color: var(--primary-color);
+	margin: 0 0 10px;
+	text-transform: uppercase;
+}
+
+.lab-subtitle {
+	font-style: italic;
+	font-weight: 600;
+	color: var(--primary-color);
+	margin-bottom: 14px;
+}
+
+.lab-hero p {
+	color: var(--text-color);
+	margin-bottom: 13px;
+}
+
+
+
+/* ========================= MOBILE ========================= */
+@media (max-width: 767.98px) {
+	.lab-hero-content {
+		padding: 35px 20px;
+	}
+
+	.lab-hero-inner {
+		max-width: 100%;
+	}
+
+}
+
+/* ========================= SMALL MOBILE ========================= */
+@media (max-width: 480px) {
+	.lab-hero-content {
+		padding: 30px 16px;
+	}
+
+}
+
+/* why choose lab */
+
+
+ .why-lab-section {
+        background: #fff;
+        padding: 18px 0 25px;
+        border-top: 1px solid #e8c4cf;
+        border-bottom: 1px solid #e8c4cf;
+    }
+
+
+    /* HEADING */
+
+    .why-lab-title {
+        margin: 0;
+        color: #111;
+    }
+
+
+    /* DECORATIVE DIVIDER */
+
+    .why-lab-divider {
+        width: 96px;
+        height: 1px;
+        background: #e8c4cf;
+        margin: 7px auto 0;
+        position: relative;
+    }
+
+    .why-lab-divider span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        color:  #a80d3a;
+        font-size: 10px;
+        line-height: 1;
+        padding: 0 9px;
+    }
+
+
+    /* ITEM */
+
+    .why-lab-item {
+        padding: 5px 35px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+
+    /* Vertical separator */
+
+    .why-lab-item::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 5px;
+        height: 112px;
+        width: 1px;
+        background: #e8c4cf;
+    }
+
+    .col-lg-3:last-child .why-lab-item::after {
+        display: none;
+    }
+
+
+    /* ICON */
+
+    .why-lab-icon {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 9px;
+        border-radius: 50%;
+        background:  #f9edf1;
+        color:  #a80d3a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .why-lab-icon i {
+        font-size: 29px;
+        line-height: 1;
+    }
+
+
+    /* TITLE */
+
+    .why-lab-item h3 {
+        margin: 0 0 8px;
+        color: #111;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+
+    /* DESCRIPTION */
+
+    .why-lab-item p {
+        max-width: 210px;
+        margin: 0 auto;
+        color: #222;
+    }
+
+
+    /* ==========================
+       TABLET
+    ========================== */
+
+    @media (max-width: 991.98px) {
+
+        .why-lab-section {
+            padding: 25px 0;
+        }
+
+        .why-lab-item {
+            padding: 15px 25px 20px;
+            margin-bottom: 15px;
+        }
+
+        /* 2 x 2 layout */
+
+        .col-md-6:nth-child(2) .why-lab-item::after {
+            display: none;
+        }
+
+        .col-md-6:nth-child(3) .why-lab-item::after {
+            display: block;
+        }
+
+    }
+
+
+    /* ==========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 767.98px) {
+
+        .why-lab-section {
+            padding: 30px 15px;
+        }
+
+        .why-lab-title {
+            font-size: 22px;
+        }
+
+        .why-lab-divider {
+            margin-top: 8px;
+        }
+
+        .why-lab-item {
+            min-height: auto;
+            padding: 18px 20px 24px;
+            margin-bottom: 0;
+        }
+
+        /* Remove vertical separators */
+
+        .why-lab-item::after {
+            display: none !important;
+        }
+
+        /* Add horizontal separator */
+
+        .col-md-6:not(:last-child) .why-lab-item::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 15%;
+            width: 70%;
+            height: 1px;
+            background: #e8c4cf;
+        }
+
+        .why-lab-icon {
+            width: 58px;
+            height: 58px;
+        }
+
+        .why-lab-item h3 {
+            font-size: 13px;
+        }
+
+        .why-lab-item p {
+            max-width: 280px;
+            font-size: 13px;
+        }
+
+    }
+
+
+    /* ==========================
+       SMALL MOBILE
+    ========================== */
+
+    @media (max-width: 480px) {
+
+
+        .why-lab-item {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
