@@ -407,7 +407,26 @@
 		input.value = String(+input.value + 1).padStart(2, "0");
 
 		box.querySelector(".minus").onclick = () =>
-		input.value = String(Math.max(1, +input.value - 1)).padStart(2, "0");
+			input.value = String(Math.max(1, +input.value - 1)).padStart(2, "0");
+	});
+
+	/* Back to Top Button */
+	var backToTopBtn = document.createElement("button");
+	backToTopBtn.className = "back-to-top";
+	backToTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+	backToTopBtn.setAttribute("aria-label", "Back to top");
+	document.body.appendChild(backToTopBtn);
+
+	backToTopBtn.addEventListener("click", function () {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	});
+
+	window.addEventListener("scroll", function () {
+		if (window.scrollY > 300) {
+			backToTopBtn.classList.add("show");
+		} else {
+			backToTopBtn.classList.remove("show");
+		}
 	});
 	
 })(jQuery);

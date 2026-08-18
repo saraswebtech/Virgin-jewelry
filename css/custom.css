@@ -13028,3 +13028,49 @@ ul.view-order-product-info-list li span {
 	line-height: 1.55;
 	margin: 0;
 }
+
+.back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 48px;
+	height: 48px;
+	background: var(--accent-color);
+	color: var(--white-color);
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+	z-index: 999;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.back-to-top:hover {
+	background: var(--primary-color);
+	color: var(--white-color);
+	transform: translateY(-4px);
+}
+
+.back-to-top i {
+	font-size: 18px;
+	line-height: 1;
+}
+
+@media (max-width: 767px) {
+	.back-to-top {
+		bottom: 20px;
+		right: 20px;
+		width: 42px;
+		height: 42px;
+	}
+}
