@@ -2579,7 +2579,7 @@ header.main-header .header-sticky.active {
 
 .page-header {
 	position: relative;
-	background-image: url('../images/page-header-bg-image.jpg');
+	background-image: url('../assets/breadcrumb.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13073,4 +13073,265 @@ ul.view-order-product-info-list li span {
 		width: 42px;
 		height: 42px;
 	}
+}
+
+
+.global-client-section {
+    background: #fff7f9;
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+/* Label */
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 12px;
+    border: 1px solid #f2d4de;
+    border-radius: 50px;
+    color: #ad1241;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.section-label span {
+    width: 5px;
+    height: 5px;
+    background: #ad1241;
+    border-radius: 50%;
+}
+
+/* Heading */
+.global-content h2 {
+    margin: 14px 0 8px;
+    color: #293b37;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+/* Locations */
+.locations {
+    color: #ad1241;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.locations span {
+    margin: 0 5px;
+    color: #d7a0b0;
+}
+
+/* Paragraph */
+.global-content p {
+    max-width: 470px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.global-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #ad1241;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+.global-btn:hover {
+    background: #8f0e35;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Map */
+.world-map {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.world-map > img {
+    width: 100%;
+    max-width: 700px;
+    opacity: .65;
+}
+
+/* Location */
+.map-location {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.map-pin {
+    width: 30px;
+    height: 30px;
+    background: #ad1241;
+    color: #fff;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(173, 18, 65, .25);
+}
+
+.map-pin i {
+    transform: rotate(45deg);
+    font-size: 12px;
+}
+
+.location-name {
+    background: #fff;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
+}
+
+/* Desktop positions */
+.new-york {
+    top: 18%;
+    left: 43%;
+}
+
+.london {
+    top: 18%;
+    left: 67%;
+}
+
+.dubai {
+    top: 43%;
+    right: 18%;
+}
+
+.los-angeles {
+    top: 42%;
+    left: 27%;
+}
+
+.sydney {
+    bottom: 18%;
+    right: 5%;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+
+    .global-client-section {
+        padding: 55px 0;
+    }
+
+    .global-content {
+        text-align: center;
+    }
+
+    .global-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .world-map {
+        min-height: 320px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+    .global-client-section {
+        padding: 45px 15px;
+    }
+
+    .global-content h2 {
+        font-size: 32px;
+    }
+
+    .locations {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .global-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .world-map {
+        min-height: 240px;
+        margin-top: 10px;
+    }
+
+    .world-map > img {
+        width: 100%;
+    }
+
+    .map-pin {
+        width: 23px;
+        height: 23px;
+    }
+
+    .map-pin i {
+        font-size: 9px;
+    }
+
+    .location-name {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+
+    .new-york {
+        top: 15%;
+        left: 39%;
+    }
+
+    .london {
+        top: 15%;
+        left: 63%;
+    }
+
+    .dubai {
+        top: 40%;
+        right: 12%;
+    }
+
+    .los-angeles {
+        top: 40%;
+        left: 20%;
+    }
+
+    .sydney {
+        bottom: 15%;
+        right: 2%;
+    }
+
 }

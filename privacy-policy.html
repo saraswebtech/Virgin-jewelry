@@ -111,11 +111,16 @@
                                     <li class="nav-item submenu"><a class="nav-link text-uppercase"
                                             href="jewellery.html">Jewellery</a>
                                         <ul>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Rings</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Earrings</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Necklaces</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Bracelets</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Pendants</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Rings</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Earrings</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Necklaces</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Bracelets</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="jewellery.html">Pendants</a>
+                                            </li>
                                         </ul>
 
                                     </li>
@@ -171,7 +176,7 @@
     <div class="page-privacy-policy">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-lg-12">
                     <!-- Privacy Policy Entry Start -->
                     <div class="privacy-policy-entry">
@@ -185,7 +190,7 @@
                         <!-- Privacy Policy Entry Header End -->
 
                         <!-- Privacy Policy Entry Item Start -->
-                        <div class="privacy-policy-entry-item" >
+                        <div class="privacy-policy-entry-item">
                             <!-- Section Title Start -->
                             <div class="section-title">
                                 <h2 class="text-anime-style-3" data-cursor="-opaque">1. Information we collect</h2>
@@ -313,7 +318,7 @@
                         <!-- Privacy Policy Entry Item End -->
 
                         <!-- Privacy Policy Entry Item Start -->
-                        <div class="privacy-policy-entry-item" >
+                        <div class="privacy-policy-entry-item">
                             <!-- Section Title Start -->
                             <div class="section-title">
                                 <h2 class="text-anime-style-3" data-cursor="-opaque">6. Your rights</h2>
@@ -602,13 +607,19 @@
     <!-- Main Footer End -->
 
     <script>
-        document.querySelector(".back-top").addEventListener("click", function (e) {
-            e.preventDefault();
+        document.addEventListener("DOMContentLoaded", function () {
+            const backTop = document.querySelector(".back-top");
 
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            if (backTop) {
+                backTop.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
+            }
         });
     </script>
 
