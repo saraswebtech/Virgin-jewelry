@@ -9221,10 +9221,10 @@ ul.view-order-product-info-list li span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 68px;
-	height: 68px;
+	width: 120px;
+	height: 120px;
 	margin: 0 auto 15px;
-	border: 1px solid #e8cbd3;
+	/* border: 1px solid #e8cbd3; */
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.7);
 }
